@@ -3,7 +3,7 @@ print("(Loaded) Quantum Super Broadcast (QSB) Script - Global Warning Mode")
 local Roles = { ROLE_DEVELOPER = 51 }
 
 registerLuaCommand({
-    command = "asb",
+    command = "qsb",
     roleRequired = Roles.ROLE_DEVELOPER,
     description = "Send a Quantum Super Broadcast to all players."
 })
@@ -40,4 +40,5 @@ onPlayerCommandCallback(function(world, player, fullCommand)
     print("[QSB] Quantum Super Broadcast by "..player:getName().." → "..count.." players: "..message)
 
     return true
+
 end)
